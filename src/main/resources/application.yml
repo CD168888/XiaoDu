@@ -135,8 +135,8 @@ spring:
 token:
   # 令牌自定义标识
   header: Authorization
-  # 令牌密钥
-  secret: abcdefghijklmnopqrstuvwxyz
+  # 64 字节以上的 Base64 密钥，安全 HS512
+  secret: FmZ8bV9hY2RyZWFt9hY2RyZWFtX3NlY3JldF9rZXlfZm9yX2p9hY2RyZWFtX3NlY3JldF9rZXlfZm9yX2pX3NlY3JldF9hY2RyZWFtX3NlY3JldF9rZXlfZm9yX2p9rZXlfZm9yX2p3dF9za55aW5nX2hhc2hfd2l0aF9oczUxMg==
   # 令牌有效期（默认30分钟）
   expireTime: 30
 
