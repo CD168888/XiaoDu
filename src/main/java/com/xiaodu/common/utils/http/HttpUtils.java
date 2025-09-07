@@ -11,18 +11,14 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.security.cert.X509Certificate;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.xiaodu.common.constant.Constants;
 import com.xiaodu.common.utils.StringUtils;
 import org.springframework.http.MediaType;
+
+import javax.net.ssl.*;
 
 /**
  * 通用http发送方法

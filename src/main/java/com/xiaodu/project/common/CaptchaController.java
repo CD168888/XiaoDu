@@ -3,9 +3,8 @@ package com.xiaodu.project.common;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import javax.annotation.Resource;
-import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,6 +19,8 @@ import com.xiaodu.common.utils.uuid.IdUtils;
 import com.xiaodu.framework.redis.RedisCache;
 import com.xiaodu.framework.web.domain.AjaxResult;
 import com.xiaodu.project.system.service.ISysConfigService;
+
+import javax.imageio.ImageIO;
 
 /**
  * 验证码操作处理

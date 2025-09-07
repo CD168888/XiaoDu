@@ -1,6 +1,6 @@
 package com.xiaodu.project.tool.gen.domain;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 import com.xiaodu.common.utils.StringUtils;
 import com.xiaodu.framework.web.domain.BaseEntity;

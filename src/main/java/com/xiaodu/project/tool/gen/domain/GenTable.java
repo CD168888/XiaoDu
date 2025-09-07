@@ -1,8 +1,8 @@
 package com.xiaodu.project.tool.gen.domain;
 
 import java.util.List;
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
 
 import org.apache.commons.lang3.ArrayUtils;
 import com.xiaodu.common.constant.GenConstants;
