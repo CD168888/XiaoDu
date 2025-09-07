@@ -81,7 +81,7 @@ public class SecurityConfig {
 
                     auth.requestMatchers("/login", "/register", "/captchaImage").permitAll()
                             // 静态资源
-                            .requestMatchers(HttpMethod.GET, "/", "/*.html", "/**/*.html", "/**/*.css", "/**/*.js", "/profile/**").permitAll()
+                            .requestMatchers(HttpMethod.GET, "/", "/*.html", "/**.html", "/**.css", "/**.js", "/profile/**").permitAll()
                             // Swagger & druid
                             .requestMatchers("/swagger-ui.html", "/swagger-resources/**", "/webjars/**", "/*/api-docs", "/druid/**").permitAll()
                             // 其他请求都要认证
