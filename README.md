@@ -1,94 +1,232 @@
-<p align="center">
-	<img alt="logo" src="https://oscimg.oschina.net/oscnet/up-d3d0a9303e11d522a06cd263f3079027715.png">
-</p>
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">RuoYi v3.9.0</h1>
-<h4 align="center">基于SpringBoot+Vue前后端分离的Java快速开发框架</h4>
-<p align="center">
-	<a href="https://gitee.com/y_project/RuoYi-Vue/stargazers"><img src="https://gitee.com/y_project/RuoYi-Vue/badge/star.svg?theme=dark"></a>
-	<a href="https://gitee.com/y_project/RuoYi-Vue"><img src="https://img.shields.io/badge/RuoYi-v3.9.0-brightgreen.svg"></a>
-	<a href="https://gitee.com/y_project/RuoYi-Vue/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
-</p>
+# RuoYi-Vue-Fast 企业级快速开发框架
 
-## 平台简介
+> 基于若依框架深度定制的 Spring Boot 3 版本，专为现代化企业应用打造的高性能、高可用快速开发平台
 
-* 本仓库为RuoYi-Vue的单应用版本，保持同步更新。
-* 配套前端代码地址[RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue/tree/master/ruoyi-ui)，技术栈（[Vue2](https://cn.vuejs.org) + [Element](https://github.com/ElemeFE/element) + [Vue CLI](https://cli.vuejs.org/zh)）。
-* 配套前端代码地址[RuoYi-Vue3](https://gitcode.com/yangzongzhuan/RuoYi-Vue3)，技术栈（[Vue3](https://v3.cn.vuejs.org) + [Element Plus](https://element-plus.org/zh-CN) + [Vite](https://cn.vitejs.dev)）。
-* 前端采用Vue、Element UI。
-* 后端采用Spring Boot、Spring Security、Redis & Jwt。
-* 权限认证使用Jwt，支持多终端认证系统。
-* 支持加载动态权限菜单，多方式轻松权限控制。
-* 高效率开发，使用代码生成器可以一键生成前后端代码。
-* 不分离版本，请移步[RuoYi](https://gitee.com/y_project/RuoYi)，微服务版本，请移步[RuoYi-Cloud](https://gitee.com/y_project/RuoYi-Cloud)
-* 阿里云折扣场：[点我进入](http://aly.ruoyi.vip)，腾讯云秒杀场：[点我进入](http://txy.ruoyi.vip)&nbsp;&nbsp;
+## 📋 项目概述
 
-## 内置功能
+本项目是基于开源的 RuoYi-Vue 框架进行二次开发的企业级快速开发平台，经过全面升级改造，完美适配最新的技术栈。项目采用单体架构设计，简化了部署和维护复杂度，同时保持了良好的模块化结构。
 
-1.  用户管理：用户是系统操作者，该功能主要完成系统用户配置。
-2.  部门管理：配置系统组织机构（公司、部门、小组），树结构展现支持数据权限。
-3.  岗位管理：配置系统用户所属担任职务。
-4.  菜单管理：配置系统菜单，操作权限，按钮权限标识等。
-5.  角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
-6.  字典管理：对系统中经常使用的一些较为固定的数据进行维护。
-7.  参数管理：对系统动态配置常用参数。
-8.  通知公告：系统通知公告信息发布维护。
-9.  操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-10. 登录日志：系统登录日志记录查询包含登录异常。
-11. 在线用户：当前系统中活跃用户状态监控。
-12. 定时任务：在线（添加、修改、删除)任务调度包含执行结果日志。
-13. 代码生成：前后端代码的生成（java、html、xml、sql）支持CRUD下载 。
-14. 系统接口：根据业务代码自动生成相关的api接口文档。
-15. 服务监控：监视当前系统CPU、内存、磁盘、堆栈等相关信息。
-16. 缓存监控：对系统的缓存信息查询，命令统计等。
-17. 在线构建器：拖动表单元素生成相应的HTML代码。
-18. 连接池监视：监视当前系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
+## 🚀 核心特性
 
-## 在线体验
+### 技术栈升级
 
-- admin/admin123  
-- 陆陆续续收到一些打赏，为了更好的体验已用于演示服务器升级。谢谢各位小伙伴。
+- **Spring Boot 3.x** - 全面拥抱最新 Spring 生态
+- **Spring Security 6** - 现代化安全框架，增强的安全防护
+- **JDK 17** - 长期支持版本，性能与安全双重保障
+- **Redis 6/7** - 高性能缓存与会话管理
+- **Druid 1.2.x** - 企业级数据库连接池
+- **JJWT 0.11.x + HS512** - 安全的 JWT 令牌机制
 
-演示地址：http://vue.ruoyi.vip  
-文档地址：http://doc.ruoyi.vip
+### 架构优化
 
-## 演示图
+- **单体架构** - 简化部署，降低运维成本
+- **模块化设计** - 清晰的代码结构，便于维护和扩展
+- **扁平化依赖** - 统一的 POM 管理，避免版本冲突
+- **前后端分离** - Vue.js 前端，RESTful API 后端
 
-<table>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/cd1f90be5f2684f4560c9519c0f2a232ee8.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/1cbcf0e6f257c7d3a063c0e3f2ff989e4b3.jpg"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-8074972883b5ba0622e13246738ebba237a.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-9f88719cdfca9af2e58b352a20e23d43b12.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-39bf2584ec3a529b0d5a3b70d15c9b37646.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-936ec82d1f4872e1bc980927654b6007307.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-b2d62ceb95d2dd9b3fbe157bb70d26001e9.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-d67451d308b7a79ad6819723396f7c3d77a.png"/></td>
-    </tr>	 
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/5e8c387724954459291aafd5eb52b456f53.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/644e78da53c2e92a95dfda4f76e6d117c4b.jpg"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-8370a0d02977eebf6dbf854c8450293c937.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-49003ed83f60f633e7153609a53a2b644f7.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-d4fe726319ece268d4746602c39cffc0621.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-c195234bbcd30be6927f037a6755e6ab69c.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/b6115bc8c31de52951982e509930b20684a.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-5e4daac0bb59612c5038448acbcef235e3a.png"/></td>
-    </tr>
-</table>
+## 📁 项目结构
 
+```
+ruoyi-vue-fast/
+├─ sql/                              # 数据库脚本
+│  ├─ ry_xxxx.sql                   # 核心业务表结构
+│  └─ quartz.sql                    # 定时任务相关表
+├─ src/main/java/com/ruoyi/         # 主要源码目录 ★
+│  ├─ RuoYiApplication.java         # 应用启动入口
+│  ├─ common/                       # 公共模块
+│  │  ├─ annotation/                # 自定义注解
+│  │  ├─ config/                    # 配置类
+│  │  ├─ constant/                  # 系统常量
+│  │  ├─ core/                      # 核心封装
+│  │  ├─ enums/                     # 枚举定义
+│  │  ├─ exception/                 # 异常处理
+│  │  ├─ json/                      # JSON 工具
+│  │  ├─ utils/                     # 工具类集合
+│  │  └─ xss/                       # XSS 防护
+│  ├─ framework/                    # 框架配置
+│  │  ├─ aspectj/                   # AOP 切面
+│  │  ├─ config/                    # 框架配置
+│  │  ├─ datasource/                # 多数据源
+│  │  ├─ interceptor/               # 拦截器
+│  │  ├─ manager/                   # 异步任务
+│  │  ├─ security/                  # 安全认证
+│  │  └─ web/                       # Web 配置
+│  ├─ system/                       # 系统管理模块
+│  │  ├─ controller/                # 控制层
+│  │  ├─ domain/                    # 实体类
+│  │  ├─ mapper/                    # 数据访问层
+│  │  └─ service/                   # 业务逻辑层
+│  ├─ generator/                    # 代码生成器
+│  │  ├─ controller/                # 生成器控制器
+│  │  ├─ domain/                    # 生成器实体
+│  │  ├─ mapper/                    # 生成器数据层
+│  │  ├─ service/                   # 生成器业务层
+│  │  └─ util/                      # 生成工具类
+│  └─ quartz/                       # 定时任务模块
+│     ├─ controller/                # 任务控制器
+│     ├─ domain/                    # 任务实体
+│     ├─ mapper/                    # 任务数据层
+│     ├─ service/                   # 任务业务层
+│     └─ util/                      # 任务工具类
+├─ src/main/resources/              # 资源文件
+│  ├─ application.yml               # 主配置文件
+│  ├─ application-druid.yml         # 数据源配置
+│  ├─ logback.xml                   # 日志配置
+│  ├─ i18n/                         # 国际化资源
+│  ├─ mapper/                       # MyBatis 映射文件
+│  ├─ mybatis/                      # MyBatis 配置
+│  └─ vm/                           # 代码生成模板
+├─ pom.xml                          # Maven 配置文件
+└─ ruoyi-ui/                        # 前端 Vue 项目（Git 子模块）
+```
 
-## 若依前后端分离交流群
+## 🛠️ 系统功能
 
-QQ群： [![加入QQ群](https://img.shields.io/badge/已满-937441-blue.svg)](https://jq.qq.com/?_wv=1027&k=5bVB1og) [![加入QQ群](https://img.shields.io/badge/已满-887144332-blue.svg)](https://jq.qq.com/?_wv=1027&k=5eiA4DH) [![加入QQ群](https://img.shields.io/badge/已满-180251782-blue.svg)](https://jq.qq.com/?_wv=1027&k=5AxMKlC) [![加入QQ群](https://img.shields.io/badge/已满-104180207-blue.svg)](https://jq.qq.com/?_wv=1027&k=51G72yr) [![加入QQ群](https://img.shields.io/badge/已满-186866453-blue.svg)](https://jq.qq.com/?_wv=1027&k=VvjN2nvu) [![加入QQ群](https://img.shields.io/badge/已满-201396349-blue.svg)](https://jq.qq.com/?_wv=1027&k=5vYAqA05) [![加入QQ群](https://img.shields.io/badge/已满-101456076-blue.svg)](https://jq.qq.com/?_wv=1027&k=kOIINEb5) [![加入QQ群](https://img.shields.io/badge/已满-101539465-blue.svg)](https://jq.qq.com/?_wv=1027&k=UKtX5jhs) [![加入QQ群](https://img.shields.io/badge/已满-264312783-blue.svg)](https://jq.qq.com/?_wv=1027&k=EI9an8lJ) [![加入QQ群](https://img.shields.io/badge/已满-167385320-blue.svg)](https://jq.qq.com/?_wv=1027&k=SWCtLnMz) [![加入QQ群](https://img.shields.io/badge/已满-104748341-blue.svg)](https://jq.qq.com/?_wv=1027&k=96Dkdq0k) [![加入QQ群](https://img.shields.io/badge/已满-160110482-blue.svg)](https://jq.qq.com/?_wv=1027&k=0fsNiYZt) [![加入QQ群](https://img.shields.io/badge/已满-170801498-blue.svg)](https://jq.qq.com/?_wv=1027&k=7xw4xUG1) [![加入QQ群](https://img.shields.io/badge/已满-108482800-blue.svg)](https://jq.qq.com/?_wv=1027&k=eCx8eyoJ) [![加入QQ群](https://img.shields.io/badge/已满-101046199-blue.svg)](https://jq.qq.com/?_wv=1027&k=SpyH2875) [![加入QQ群](https://img.shields.io/badge/已满-136919097-blue.svg)](https://jq.qq.com/?_wv=1027&k=tKEt51dz) [![加入QQ群](https://img.shields.io/badge/已满-143961921-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=0vBbSb0ztbBgVtn3kJS-Q4HUNYwip89G&authKey=8irq5PhutrZmWIvsUsklBxhj57l%2F1nOZqjzigkXZVoZE451GG4JHPOqW7AW6cf0T&noverify=0&group_code=143961921) [![加入QQ群](https://img.shields.io/badge/已满-174951577-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ZFAPAbp09S2ltvwrJzp7wGlbopsc0rwi&authKey=HB2cxpxP2yspk%2Bo3WKTBfktRCccVkU26cgi5B16u0KcAYrVu7sBaE7XSEqmMdFQp&noverify=0&group_code=174951577) [![加入QQ群](https://img.shields.io/badge/已满-161281055-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Fn2aF5IHpwsy8j6VlalNJK6qbwFLFHat&authKey=uyIT%2B97x2AXj3odyXpsSpVaPMC%2Bidw0LxG5MAtEqlrcBcWJUA%2FeS43rsF1Tg7IRJ&noverify=0&group_code=161281055) [![加入QQ群](https://img.shields.io/badge/已满-138988063-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=XIzkm_mV2xTsUtFxo63bmicYoDBA6Ifm&authKey=dDW%2F4qsmw3x9govoZY9w%2FoWAoC4wbHqGal%2BbqLzoS6VBarU8EBptIgPKN%2FviyC8j&noverify=0&group_code=138988063) [![加入QQ群](https://img.shields.io/badge/已满-151450850-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=DkugnCg68PevlycJSKSwjhFqfIgrWWwR&authKey=pR1Pa5lPIeGF%2FFtIk6d%2FGB5qFi0EdvyErtpQXULzo03zbhopBHLWcuqdpwY241R%2F&noverify=0&group_code=151450850) [![加入QQ群](https://img.shields.io/badge/已满-224622315-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=F58bgRa-Dp-rsQJThiJqIYv8t4-lWfXh&authKey=UmUs4CVG5OPA1whvsa4uSespOvyd8%2FAr9olEGaWAfdLmfKQk%2FVBp2YU3u2xXXt76&noverify=0&group_code=224622315) [![加入QQ群](https://img.shields.io/badge/已满-287842588-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Nxb2EQ5qozWa218Wbs7zgBnjLSNk_tVT&authKey=obBKXj6SBKgrFTJZx0AqQnIYbNOvBB2kmgwWvGhzxR67RoRr84%2Bus5OadzMcdJl5&noverify=0&group_code=287842588) [![加入QQ群](https://img.shields.io/badge/已满-187944233-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=numtK1M_I4eVd2Gvg8qtbuL8JgX42qNh&authKey=giV9XWMaFZTY%2FqPlmWbkB9g3fi0Ev5CwEtT9Tgei0oUlFFCQLDp4ozWRiVIzubIm&noverify=0&group_code=187944233) [![加入QQ群](https://img.shields.io/badge/已满-228578329-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=G6r5KGCaa3pqdbUSXNIgYloyb8e0_L0D&authKey=4w8tF1eGW7%2FedWn%2FHAypQksdrML%2BDHolQSx7094Agm7Luakj9EbfPnSTxSi2T1LQ&noverify=0&group_code=228578329) [![加入QQ群](https://img.shields.io/badge/191164766-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=GsOo-OLz53J8y_9TPoO6XXSGNRTgbFxA&authKey=R7Uy%2Feq%2BZsoKNqHvRKhiXpypW7DAogoWapOawUGHokJSBIBIre2%2FoiAZeZBSLuBc&noverify=0&group_code=191164766) 点击按钮入群。
+### 核心业务功能
+
+1. **用户管理** - 系统用户的创建、编辑、删除和权限配置
+2. **部门管理** - 组织架构管理，支持树形结构和数据权限
+3. **岗位管理** - 职务配置，支持多岗位分配
+4. **菜单管理** - 动态菜单配置，细粒度权限控制
+5. **角色管理** - 基于角色的访问控制（RBAC）
+6. **字典管理** - 系统字典数据统一管理
+7. **参数管理** - 系统参数动态配置
+8. **通知公告** - 系统消息发布与管理
+
+### 系统监控功能
+
+1. **操作日志** - 用户操作行为记录与审计
+2. **登录日志** - 用户登录记录与安全监控
+3. **在线用户** - 实时在线用户状态监控
+4. **定时任务** - 可视化任务调度与监控
+5. **系统接口** - API 接口文档自动生成
+6. **服务监控** - 系统资源实时监控
+7. **缓存监控** - Redis 缓存状态监控
+8. **连接池监控** - 数据库连接池性能监控
+
+### 开发辅助功能
+
+1. **代码生成器** - 一键生成前后端 CRUD 代码
+2. **在线构建器** - 可视化表单设计器
+
+## 💡 技术亮点
+
+### 安全性增强
+
+- **JWT 安全认证** - 采用 HS512 算法的安全密钥
+- **XSS 防护** - 全面的跨站脚本攻击防护
+- **SQL 注入防护** - MyBatis 参数化查询
+- **CSRF 防护** - 跨站请求伪造防护
+- **接口限流** - 防止恶意请求攻击
+
+### 性能优化
+
+- **Redis 缓存** - 多级缓存策略，提升响应速度
+- **连接池优化** - Druid 连接池性能调优
+- **异步处理** - 异步任务处理，提升并发能力
+- **SQL 优化** - 慢 SQL 监控与优化建议
+
+### 开发效率
+
+- **代码生成** - 支持单表、树表、主子表代码生成
+- **热部署** - 开发环境代码热更新
+- **API 文档** - Swagger 自动生成 API 文档
+- **统一异常** - 全局异常处理机制
+
+## 🔧 快速开始
+
+### 环境要求
+
+- **JDK 17+** - 推荐使用 OpenJDK 17
+- **Maven 3.6+** - 依赖管理工具
+- **MySQL 8.0+** - 主数据库
+- **Redis 6.0+** - 缓存数据库
+- **Node.js 16+** - 前端构建环境
+
+### 部署步骤
+
+1. **克隆项目**
+
+   ```
+   git clone [项目地址]
+   cd ruoyi-vue-fast
+   ```
+
+2. **初始化数据库**
+
+   ```
+   # 创建数据库
+   CREATE DATABASE ry_vue DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+   # 执行SQL脚本
+   mysql -u root -p ry_vue < sql/ry_xxxx.sql
+   mysql -u root -p ry_vue < sql/quartz.sql
+   ```
+
+3. **修改配置**
+
+   ```
+   # application-druid.yml
+   spring:
+     datasource:
+       druid:
+         master:
+           url: jdbc:mysql://localhost:3306/ry_vue
+           username: root
+           password: your_password
+   ```
+
+4. **启动后端服务**
+
+   ```
+   mvn clean install
+   java -jar target/ruoyi-admin.jar
+   ```
+
+5. **启动前端服务**
+
+   ```
+   cd ruoyi-ui
+   npm install
+   npm run dev
+   ```
+
+## 📈 版本特性
+
+### Spring Boot 3 适配
+
+- **原生编译支持** - GraalVM Native Image
+- **性能提升** - 启动速度和内存占用优化
+- **Java 17 特性** - 充分利用新语言特性
+- **依赖升级** - 所有依赖升级到最新稳定版本
+
+### Spring Security 6 增强
+
+- **Lambda DSL** - 现代化的配置语法
+- **方法级安全** - 细粒度权限控制
+- **OAuth2 支持** - 现代化身份认证
+- **CORS 优化** - 跨域请求处理
+
+## 🤝 开发规范
+
+- **代码风格** - 遵循阿里巴巴 Java 开发规范
+- **注释规范** - 完整的 JavaDoc 注释
+- **异常处理** - 统一的异常处理机制
+- **日志规范** - 结构化日志记录
+- **API 设计** - RESTful API 设计规范
+
+## 🎯 适用场景
+
+- **企业管理系统** - OA、CRM、ERP 等
+- **电商后台系统** - 商品、订单、用户管理
+- **内容管理系统** - CMS、博客系统
+- **物联网平台** - 设备管理、数据采集
+- **微服务网关** - API 网关、服务治理
+
+## 📞 技术支持
+
+本项目基于开源的 RuoYi 框架进行二次开发，在保持原有优秀特性的基础上，进行了现代化升级和性能优化，为企业级应用开发提供了强有力的技术支撑。
+
+------
+
+*持续更新中，更多功能特性敬请期待...*
